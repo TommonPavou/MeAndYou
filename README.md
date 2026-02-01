@@ -18,13 +18,13 @@ The application implements a basic secure communication model based on well-know
   - Communication over SSL sockets using a self-signed certificate.
 
 Cryptographic Parameters
-private static final int DIMENSIONE_DH_BIT = 2048; // Diffie-Hellman group size (2048 bit)
-private static final int DIMENSIONE_AES_BYTE = 32; // AES-256 (32 bytes)
-private static final int DIMENSIONE_TAG_GCM_BIT = 128; // GCM authentication tag (128 bit)
-private static final int DIMENSIONE_IV_GCM_BYTE = 12; // Recommended IV size for GCM (12 bytes)
-private static final int DIMENSIONE_SESSION_ID_BYTE = 16; // 128-bit session ID
-private static final int DIMENSIONE_SALE_CRITTOGRAFICO_BYTE = 32; // 32-byte cryptographic salt
-private static final int LUNGHEZZA_MESSAGGI_CRIPTATI_BYTE = 256; // Fixed encrypted message length (padding)
+private static final int DIMENSIONE_DH_BIT = 2048;
+private static final int DIMENSIONE_AES_BYTE = 32;
+private static final int DIMENSIONE_TAG_GCM_BIT = 128;
+private static final int DIMENSIONE_IV_GCM_BYTE = 12;
+private static final int DIMENSIONE_SESSION_ID_BYTE = 16;
+private static final int DIMENSIONE_SALE_CRITTOGRAFICO_BYTE = 32;
+private static final int LUNGHEZZA_MESSAGGI_CRIPTATI_BYTE = 256;
 
 
 ## Features
