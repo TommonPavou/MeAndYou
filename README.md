@@ -1,8 +1,12 @@
 ## Description
 This project is a private messaging application written entirely in Java, developed for personal and educational purposes with the goal of experimenting with basic cybersecurity and secure communication concepts.
+
 The software allows users to create temporary private rooms, each with a predefined lifetime. Access to a room is only possible by knowing the unique code generated at the moment of its creation, making communication sessions ephemeral by design.
+
 Several features were intentionally never fully implemented or deeply refined, such as an advanced administrative console, extensive message customization, or flexible room lifetime configuration. The project was never intended for production use, but rather as a controlled learning environment to explore networking, cryptography, and basic defensive strategies.
+
 The application has never been tested in a real deployment, as it requires an SSL socket configuration. For cryptographic purposes, it relies on a self-signed certificate, suitable for experimentation but not for real-world secure systems.
+
 The entire codebase is written and commented in Italian, reflecting its didactic and personal nature.
 
 
