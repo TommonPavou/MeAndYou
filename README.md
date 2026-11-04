@@ -13,30 +13,29 @@ The entire codebase is written and commented in Italian, reflecting its didactic
 ## Security and Cryptography Overview:
 The application implements a basic secure communication model based on well-known cryptographic primitives:
 
-  - Diffie–Hellman key exchange to securely establish a shared secret between peers.
-
   - Derivation of a 256-bit AES key from the shared secret.
 
-  - Message encryption using AES-256 in GCM mode, providing confidentiality and authentication.
+  - Diffie–Hellman key exchange to securely establish a shared secret between peers.
 
-  - Communication over SSL sockets using a self-signed certificate.
+  - Message encryption using AES-256 in GCM mode, providing confidentiality and authentication.
 
 
 ## Features
 The project includes a combination of implemented features and conceptual prototypes, designed to explore security-related ideas rather than user experience.
 Note that some additional features were planned but left incomplete, as the primary focus of the project was conceptual experimentation.
 
-  - Creation of temporary private rooms with limited lifetime.
-
-  - Access control through unique room codes.
 
   - Encrypted messaging via AES-256-GCM.
+
+  - Access control through unique room codes.
+   
+  - Creation of temporary private rooms with limited lifetime.
+
+  - Elementary checks aimed at detecting or mitigating simple DoS-like behaviors.
 
   - Generation of occasional fake messages to simulate a constant and misleading information flow.
 
   - Message padding to enforce a fixed encrypted message length, mitigating basic traffic analysis.
-
-  - Elementary checks aimed at detecting or mitigating simple DoS-like behaviors.
 
 
 ## Disclaimer
@@ -44,9 +43,9 @@ This software:
 
   - Is not production-ready.
 
-  - Has never undergone a security audit.
-
   - Uses self-signed certificates.
+  
+  - Has never undergone a security audit.
 
   - Was developed exclusively for educational purposes.
 
